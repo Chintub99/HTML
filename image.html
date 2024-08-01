@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="" width="400px"alt=""> 
+    <img src="./Anime_Boy.pn" width="400px"alt=""> 
+    <!--Change the browser window width to see the image change.-->
+    <picture>
+        <source media="(min-width:650px)" srcset=""/>
+        <source media="(min-width:460px)" srcset=""/>
+        <img src="" alt="">
+    </picture> 
+    <!-- an image map generator -->
+    <img src="Anime_Boy.png" usemap="#image-map">
+
+    <map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="1173,1100,1502,1301" shape="rect">
+    <area target="" alt="" title="" href="" coords="1923,1282,2267,1478" shape="0">
+    <area onclick="two()" target="" alt="" title="" href="" coords="1407,2548,1517,2806" shape="0">
+    </map>
+<script>
+    function one(){
+        alert("You clicked on one")
+    }
+    function two(){
+        alert("You clicked on two")
+    }
+</script>    
+</body>
+</html>
